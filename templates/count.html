@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>COUNT</h1>
+    <h3>No of words entered: {{tot_wrds}}</h3>
+    <h4>Words Entered:</h4>
+    <p>{{fulltext}}</p>
+    <h4>Count of Words:</h4>
+
+    {% for words, totcount in sortedWords %}
+    <span style="font-weight: 800;">{{words}}: </span>
+    <span>{{totcount}}</span>
+    <br><br>
+    {% endfor %}
+</body>
+
+</html>
